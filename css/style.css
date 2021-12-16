@@ -1,0 +1,9 @@
+.social-links {
+  color: #212121;
+}
+.social-links .link:hover {
+  color: #2196f3;
+}
+.button {
+  cursor: pointer;
+}
