@@ -1,3 +1,43 @@
+body {
+  font-family: Releway, Roboto;
+  color: #212121;
+  background-color: #fff;
+  text-align: center;
+  width: 1600px;
+}
+ul {
+  list-style: none;
+}
+nav > a {
+  text-decoration: none;
+  color: #212121;
+}
+header {
+  display: flex;
+}
+.hero {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+}
+.hero-title {
+  padding: 200px 450px 0px 450px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.our-team-specifics {
+  display: flex;
+  text-align: justify;
+  justify-content: space-around;
+}
+
 .social-links {
   color: #212121;
 }
@@ -5,5 +45,32 @@
   color: #2196f3;
 }
 .button {
+  background-color: #2196f3;
+  width: 200px;
+  height: 50px;
   cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+}
+.what-we-do {
+  display: flex;
+  justify-content: space-around;
+}
+.sections-three {
+  margin: 40px 0 0 0;
+  width: 1600px;
+  height: 648px;
+}
+.our-team {
+  display: flex;
+  justify-content: space-around;
+}
+footer {
+  background-color: #2f303a;
+  display: flex;
+  color: rgba(255, 255, 255, 60%);
 }
