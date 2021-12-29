@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title lang="ru">Студия</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Студия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
+    rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">  
   </head>
   <body>
-     <!--Верхняя линия сайта-->
-    <header>
+    <!--Верхняя линия сайта-->
+    <header> 
+      <!-- Навигация -->
       <nav>
-        <a href="./index.html">WebStudio</a>
-        <ul>
+        <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
+        <ul class="site-nav list">
           <li>
-            <a href="./index.html">Студия</a>
+            <a class="link current" href="./index.html">Студия</a>
           </li>
           <li>
-            <a href="./portfolio.html">Портфолио</a>
+            <a class="link" href="./portfolio.html">Портфолио</a>
           </li>
           <li>
-            <a href="">Контакты</a>
+            <a class="link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
+      <!-- контакты -->
       <ul class="contacts">
         <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
         <li>
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>    
     </header>
@@ -39,11 +43,12 @@
       <!--Шапка сайта-->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
-        <button class="link button" type="button">Заказать услугу</button>
+        <button class="link button-studio" type="button">Заказать услугу</button>
       </section>
       <!--Особенности компании-->
       <section>
-        <h2 hidden>Особенности нашей компании</h2>
+        <!-- спрятать через цсс титул -->
+        <h2 class="hiden-title">Особенности нашей компании</h2>
         <ul class="our-team-specifics">
           <li>
             <h3>Внимание к деталям</h3>
@@ -106,13 +111,15 @@
       </section>
     </main>
     <!--Подвал сайта--> 
-    <footer>
-      <a href="./index.html">WebStudio</a>
-      <address>
+    <footer class="footer">
+      <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
+      <address class="social-links">
         <ul>
-          <li>  г. Киев, пр-т Леси Украинки, 26</li>
-          <li>  <a href="mailto:info@devstudio.com">info@devstudio.com</a><br></li>
-          <li>  <a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li><a class="link" href="https://goo.gl/maps/VGkeZ7NEwQXVruFt6" target="_blank" 
+            rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
+          </li>
+          <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a><br></li>
+          <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
     </footer>
