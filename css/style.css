@@ -3,8 +3,8 @@
 /* основной цвет текста #757575 */
 /* вторичный цвет текста #212121 */
 /* основной акцент цвет #2196F3 */
-/* цвет фона героя и подвала #2F303A */
 /* цвет ховера основной кнопки #188CE8 */
+/* цвет фона героя и подвала #2F303A */
 /* цвет текста адреса rgba(255, 255, 255, 0.6) */
 /* цвет логотипа #000000 */
 :root {
@@ -16,40 +16,45 @@
   --secondary-accent-color: #188ce8;
   --address-text-color: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
+  --background-color: #2f303a;
 }
+/* Тело */
 body {
-  font-family: 'Roboto', sans-serif;
   color: var(--primery-text-color);
   background-color: var(--primery-white-color);
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
 /* панель навигации */
+.site-nav .link.current {
+  color: #2196f3;
+}
 .logo.link {
+  color: var(--prymery-accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
-  color: var(--prymery-accent-color);
+  line-height: 1.19;
 }
 .logo .logo-header {
   color: var(--logo-color);
 }
 .site-nav .link {
+  color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
 }
 .contacts .link {
+  color: var(--primery-text-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primery-text-color);
 }
-/* Ховер и фокус */
+/* Ховер и фокус ссылок */
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts .link:hover,
@@ -64,35 +69,100 @@ body {
 .link {
   text-decoration: none;
 }
-
+/* Секция Герой */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .hero-title {
-  font-family: Roboto;
+  color: var(--primery-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.06em;
+}
+.main.button {
+  background-color: var(--prymery-accent-color);
+  color: var(--primery-white-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.main.button:hover,
+.main.button:focus {
+  background-color: var(--secondary-accent-color);
+}
+/*особенности компании*/
+.title {
+  color: var(--secondary-text-color);
+}
+.section.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.features.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features.text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Наша команда */
+.our-team {
+  background-color: var(--secondary-white-color);
+}
+.our-team.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.position {
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+/* Фильтр портфолио */
+.button {
+  font-family: inherit;
+  background-color: var(--secondary-white-color);
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--prymery-accent-color);
   color: var(--primery-white-color);
 }
-.button {
-  background-color: #2196f3;
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  color: #000;
+/* Секция портфолио */
+.project.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
+.project.type {
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+/* Подвал сайта */
 .footer {
-  background-color: #2f303a;
-  color: rgba(255, 255, 255, 60%);
+  background-color: var(--background-color);
 }
 .logo .logo-footer {
   color: var(--primery-white-color);
@@ -102,7 +172,6 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 .footer-contacts.link {
   font-style: normal;
@@ -110,7 +179,4 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: var(--address-text-color);
-}
-.site-nav .link.current {
-  color: #2196f3;
 }
