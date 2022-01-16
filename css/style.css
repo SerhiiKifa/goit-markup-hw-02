@@ -18,14 +18,6 @@
   --logo-color: #000000;
   --background-color: #2f303a;
 }
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 /* Тело */
 body {
   color: var(--primery-text-color);
